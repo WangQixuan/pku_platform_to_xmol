@@ -7,6 +7,7 @@ $(window).bind("load", function () {
                 var runcheck = setInterval(function () {
                     if ($('input[name=cas]').length != 0) {
                         clearInterval(runcheck);
+                        $('#ivAddForm .modal-body').append("<div>此页面信息导入由pku_platform_to_xmol插件提供，作者：<a target='_blank' href='https://www.wangqixuan.cn/pages/about.html'>王琪璇</a></div>");
                         $('input[name=cas]').val(reagent_info['casno']);
                         $('input[name=brand]').val(reagent_info['品牌']);
                         $('input[name=supplier]').val(reagent_info['供货商名称']);
